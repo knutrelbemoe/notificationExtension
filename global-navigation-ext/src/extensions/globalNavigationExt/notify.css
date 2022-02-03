@@ -1,0 +1,138 @@
+.flexWarper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexWarperitem {
+  border: 1px solid #5ebbc7;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.2em;
+  width: 20%;
+}
+#divNotification:hover{
+  background: #F4F2E6;
+}
+#divNotificationDrpinner {
+    max-height: 316px;
+    overflow-y: auto;
+}
+#divNotificationDrp:after {
+right: 57px;
+  top: -30px;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 18px solid rgba(136,183,213,0);
+  border-bottom-color: #F4F2E6!important;
+  margin-left: -30px;
+}
+#divNotification svg{
+  color: #000000;
+}
+#divNotification #spcount {
+  background: #c12f0e;
+  min-width: 10px ;
+  display: inline-block;
+}
+.hovered {
+  background: #ddd;
+}
+
+.MNcard {
+  height: 100%;
+  position: relative;
+}
+.MNcard-link {
+  --tw-border-opacity: 1;
+  border-color: rgba(2, 166, 127, var(--tw-border-opacity));
+  border-width: 2px;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.MNcard-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(196, 242, 218, var(--tw-bg-opacity));
+}
+
+.addButtonPopup {
+  float: right;
+  background: transparent;
+  border: 2px solid #485e8f;
+  color: #fff;
+  /* margin-bottom: 4px; */
+  padding: 3px 12px;
+  border-radius: 25px;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  cursor: pointer;
+  color:#000000;
+  
+}
+.TypesInput {
+  width: 100%;
+  border: 1px solid #a2a2a2;
+  min-height: 28px;
+}
+
+
+.icon {
+  position: absolute;
+  bottom: 23px;
+  right: 20px;
+  transform: translate(-50%,-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 2px;
+  background-color: #1fc058;
+  top: 25px;
+  width: 90%;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  animation: arrow .7s linear infinite;
+}
+
+.arrow::after, .arrow::before {
+  content: '';
+  position: absolute;
+  width: 57%;
+  right: -2px;
+  background-color: #fff;
+  height: 2px;
+  background-color: #1fc058;
+}
+
+.arrow::after {
+  top: -3px;
+  transform: rotate(45deg)
+}
+
+.arrow::before {
+  top: 3px;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  transform: rotate(-45deg);
+}
+.MNcard:hover .icon {
+    right:10px;
+}
+
+.ms-Dialog-main {
+  max-width: 100%;
+  min-width: 80% !important;
+  overflow: hidden;
+}
+
+.tagLine {
+  width: 160px;
+}

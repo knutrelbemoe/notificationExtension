@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://bravoav.sharepoint.com/sites/Modern-Bravo",
+      "customActions": {
+        "c20064c9-bac8-468a-8c0e-7327a5da660c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "globalNavigationExt": {
+      "pageUrl": "https://bravoav.sharepoint.com/sites/Modern-Bravo",
+      "customActions": {
+        "c20064c9-bac8-468a-8c0e-7327a5da660c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
